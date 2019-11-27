@@ -4,7 +4,7 @@ parse_git_branch() {
 PS1="\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[1;34m\]\h \[\033[01;33m\]\w\[\033[0;36m\]\$(parse_git_branch)\[\033[01;35m\] \$\[\033[0m\]"
 ##colorize ls
 export CLICOLOR=1
-export LSCOLORS='di=1:ln=31:*.py=93'
+export LS_COLORS=
 #####alias source files
 ###modan and current aliases 
 source ~/.bash_project_aliases
