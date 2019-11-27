@@ -1,0 +1,16 @@
+###Project-aliases
+#
+alias current-delphin='cd ~/www/delphin/devbox/releases/current'
+alias current-hells='cd ~/www/hells/devbox/releases/current'
+alias current-mysmartshop='cd ~/www/mysmartshop/devbox/releases/current'
+alias current-saardogs='cd ~/www/saardogs/devbox/releases/current'
+alias current-ttschneider='cd ~/www/ttschneider/devbox/releases/current'
+alias current-ome='cd ~/www/ome/devbox/releases/current'
+###Project-modman-aliases
+#
+alias modman-delphin='cd ~/www/delphin/devbox/releases/current/.modman'
+alias modman-hells='cd ~/www/hells/devbox/releases/current/.modman'
+alias modman-mysmartshop='cd ~/www/mysmartshop/devbox/releases/current/.modman'
+alias modman-saardogs='cd ~/www/saardogs/devbox/releases/current/.modman'
+alias modman-ttschneider='cd ~/www/ttschneider/devbox/releases/current/.modman'
+alias modman-ome='cd ~/www/ome/devbox/releases/current/.modman'
