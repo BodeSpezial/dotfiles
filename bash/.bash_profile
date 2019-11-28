@@ -7,14 +7,14 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #####alias source files
 ###modan and current aliases 
-source ~/.bash_project_aliases
+source ./.bash_project_aliases
 #
 ###aliases for costumer server
-source ~/.bash_server_aliases
+source ./.bash_server_aliases
 #
 ###base aliases
-source ~/.bash_aliases
-#source ~/.profile
+source ./.bash_aliases
+
 export EDITOR=/usr/bin/vim
 export BLOCKSIZE=1k
 alias phpcs="/Users/jb/.composer/vendor/bin/phpcs --standard=vendor/zifius/magizendo/Magento1/ruleset.xml "
@@ -22,4 +22,4 @@ export PATH="/usr/local/sbin:$PATH:~/Development/flutter/bin:~/Desktop/"
 ##start slicing software
 alias 3dd="DYLD_INSERT_LIBRARIES=/Applications/Simplify3D-4.0.1/Interface.dylib DYLD_FORCE_FLAT_NAMESPACE=1 /Applications/Simplify3D-4.0.1/Simplify3D.app/Contents/MacOS/Simplify3D"
 ##load bashrc
-source ~/.bashrc
+source ./.bashrc
