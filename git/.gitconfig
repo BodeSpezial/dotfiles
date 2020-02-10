@@ -2,7 +2,7 @@
 	name = BodeSpezial
 	email = konstantin.bode@outlook.com
 [core]
-  editor = nano
+  editor = vim
   excludesfile = ~/.gitignore
 [color]
   branch = auto
