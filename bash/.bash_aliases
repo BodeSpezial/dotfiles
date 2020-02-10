@@ -23,11 +23,12 @@ alias gaa='git add .'
 alias gc='git commit -m'
 alias gp='git push'
 alias gd='git diff'
-alias gm='gch master'
+alias gm='say "Ab zum Master mein Master" ; gch master'
 alias gb='git branch'
 alias gch='git checkout'
 alias gpl='git pull'
 alias gd='gch develop'
+alias gil='git log --all --oneline --graph'
 #
 #docker commands
 #
@@ -48,8 +49,19 @@ alias yd='yarn dev'
 alias ys='yarn start'
 alias yb='yarn build'
 alias yp='yarn pr'
+alias ya='yarn add'
+alias yad='yarn add -D'
 #
 #python
 #
 alias pip='pip3'
 alias py='python3'
+#
+#kubernetes
+#
+alias kube='kubectl'
+alias k8s='kubectl'
+alias kua='kubectl apply'
+alias kud='kubectl delete'
+alias kl='kubectl logs'
+alias kgp='kubectl get pods'
