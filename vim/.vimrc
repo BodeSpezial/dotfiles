@@ -16,3 +16,9 @@ noremap <Right> <Nop>
 
 set vb t_vb= "disable beep and flash
 
+"autocmds
+"execute save
+au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
+au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
+au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
+
