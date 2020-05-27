@@ -1,3 +1,6 @@
-# disables the aws module
 [aws]
 disabled = true
+
+[git_branch]
+symbol = "🌱 "
+
