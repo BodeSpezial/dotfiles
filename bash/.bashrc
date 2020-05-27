@@ -28,3 +28,4 @@ export EDITOR=/usr/bin/vim
 export BLOCKSIZE=1k
 export PATH="/usr/local/sbin:$PATH:~/Development/flutter/bin:~/Desktop/:/usr/local/go/bin"
 
+eval "$(starship init bash)"
