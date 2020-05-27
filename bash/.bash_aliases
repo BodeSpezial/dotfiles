@@ -13,7 +13,7 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias edit='subl'                           # edit:         Opens any file in sublime editor
+alias edit='vim'                           # edit:         Opens any file in sublime editor
 #
 #git commands
 #
@@ -51,6 +51,7 @@ alias yb='yarn build'
 alias yp='yarn pr'
 alias ya='yarn add'
 alias yad='yarn add -D'
+alias yag='yarn global add'
 #
 #python
 #
@@ -65,3 +66,7 @@ alias kua='kubectl apply'
 alias kud='kubectl delete'
 alias kl='kubectl logs'
 alias kgp='kubectl get pods'
+#
+#vim redirect
+#I use a different version of vim because the mac version doesn't support python3
+alias vim='/usr/local/Cellar/vim/8.2.0500_1/bin/vim'
