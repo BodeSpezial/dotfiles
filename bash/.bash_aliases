@@ -51,6 +51,7 @@ alias yb='yarn build'
 alias yp='yarn pr'
 alias ya='yarn add'
 alias yad='yarn add -D'
+alias yag='yarn global add'
 #
 #python
 #
