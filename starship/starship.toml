@@ -4,3 +4,6 @@ disabled = true
 [git_branch]
 symbol = "🌱 "
 
+[username]
+show_always = true
+
