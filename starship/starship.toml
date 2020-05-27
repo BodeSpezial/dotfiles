@@ -1,0 +1,3 @@
+# disables the aws module
+[aws]
+disabled = true
