@@ -25,6 +25,13 @@ au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
 "plugins
 autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
+"enable highlighting in NERDTree for whole file and not just for logo
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+"highlight full folder name
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
 "enable tabs in airline
 let g:airline#extensions#tabline#enabled = 1
