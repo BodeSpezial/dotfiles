@@ -66,3 +66,7 @@ alias kua='kubectl apply'
 alias kud='kubectl delete'
 alias kl='kubectl logs'
 alias kgp='kubectl get pods'
+#
+#vim redirect
+#I use a different version of vim because the mac version doesn't support python3
+alias vim='/usr/local/Cellar/vim/8.2.0500_1/bin/vim'
