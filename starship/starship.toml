@@ -7,3 +7,6 @@ symbol = "🌱 "
 [username]
 show_always = true
 
+[battery]
+charging_symbol = "⚡️"
+
