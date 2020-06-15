@@ -21,7 +21,7 @@ set vb t_vb= "disable beep and flash
 "execute save
 au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
 au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
-au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
+" au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
 
 augroup remember_folds
   autocmd!
