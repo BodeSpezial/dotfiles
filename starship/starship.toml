@@ -13,8 +13,5 @@ charging_symbol = "⚡️"
 [directory]
 truncate_to_repo = false
 
-[hostname]
-ssh_only = false
-
 [golang]
 symbol = " "
