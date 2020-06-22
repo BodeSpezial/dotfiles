@@ -10,8 +10,5 @@ show_always = true
 [battery]
 charging_symbol = "⚡️"
 
-[directory]
-truncate_to_repo = false
-
 [golang]
 symbol = " "
