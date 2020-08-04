@@ -52,9 +52,9 @@ au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
 " au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
 
 augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
+  au!
+  au BufWinLeave * mkview
+  au BufWinEnter * silent! loadview
 augroup END
 
 """ airline
@@ -101,10 +101,11 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 
+""" NERDTree
 "open NERDTree autmatically
-autocmd vimenter * NERDTree
+au vimenter * NERDTree
 "close NERDTree, when it's the last window left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
