@@ -19,6 +19,10 @@ let s:rspec_red = 'FE405F'
 let s:git_orange = 'F54D27'
 
 syntax on "sytnax highlighting
+colorscheme desert
+hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
+hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
+
 set number relativenumber
 augroup numbertoggle
   au!
@@ -109,6 +113,8 @@ au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTre
 "show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
+au Vimenter * 2wincmd w " go to 2nd available window
+let NERDTreeMinimalUI=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
