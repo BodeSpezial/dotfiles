@@ -1,6 +1,12 @@
 syntax on "sytnax highlighting
+set number relativenumber
+augroup numbertoggle
+  au!
+  au BufEnter,FocusGained,InsertLeave * set relativenumber
+  au BufLeave,FocusLost,InsertEnter   * set norelativenumber
+  au BufEnter,FocusGained,InsertLeave NERD_tree* set norelativenumber
+augroup END
 
-set number "show line numbers
 set autoindent "activate autoindent
 set encoding=UTF-8 "set encoding to utf-8 for devicons
 
