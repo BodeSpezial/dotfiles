@@ -23,6 +23,8 @@ colorscheme desert
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
 
+" show errors in numbercolumn
+set signcolumn=number
 set number relativenumber
 augroup numbertoggle
   au!
