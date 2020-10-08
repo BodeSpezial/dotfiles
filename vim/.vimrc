@@ -18,13 +18,18 @@ let s:white = "FFFFFF"
 let s:rspec_red = 'FE405F'
 let s:git_orange = 'F54D27'
 
-syntax on "sytnax highlighting
+let g:tex_flavor='latex'
+syntax enable
 colorscheme desert
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
 
 " show errors in numbercolumn
 set signcolumn=number
+" use more natural splitting
+set splitbelow
+set splitright
+
 set number relativenumber
 augroup numbertoggle
   au!
@@ -37,21 +42,50 @@ set autoindent "activate autoindent
 set encoding=UTF-8 "set encoding to utf-8 for devicons
 
 set expandtab "use_spaces_instead_of_tabs
-"set listchars=space:_,tab:>~ list
 set tabstop=4 "set tabsize to 4
+set softtabstop=4 "delete 4 spaces w/ backspace
 set backspace=indent,eol,start "enable backspace
-
-"disable arrow keys to teach hjkl
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+autocmd FileType make setlocal noexpandtab "use tabs for makefile
 
 set vb t_vb= "disable beep and flash
 
 imap jj <Esc>
 
-""" autocmds
+""" COC
+" Use tab for trigger completion with characters ahead and navigate.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+""" COC end
+
+""" Autocmds
+""" Moving
+"disable arrow keys to teach hjkl
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+" use ctrl+j/k/l/w to move between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+""" Moving end
+
 "execute save
 au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
 au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
@@ -62,8 +96,24 @@ augroup remember_folds
   au BufWinLeave * mkview
   au BufWinEnter * silent! loadview
 augroup END
+""" Aucmds end
 
-""" airline
+""" Plug
+call plug#begin('~/.vim/plugged')
+Plug 'lervag/vimtex'
+Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'danishprakash/vim-docker'
+call plug#end()
+""" Plug end
+
+""" Airline
 "enable tabs in airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_filetype_overrides = { 
@@ -106,6 +156,7 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
+""" Airline end
 
 """ NERDTree
 "open NERDTree autmatically
@@ -133,3 +184,5 @@ let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that
 let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
+let g:NERDTreeSortHiddenFirst = 1
+""" NERDTree end
