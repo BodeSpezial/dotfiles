@@ -112,6 +112,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'danishprakash/vim-docker'
+Plug 'frazrepo/vim-rainbow'
 call plug#end()
 """ Plug end
 
