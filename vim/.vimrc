@@ -26,6 +26,8 @@ hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
 
 " show errors in numbercolumn
 set signcolumn=number
+" show begun commands
+set showcmd
 " use more natural splitting
 set splitbelow
 set splitright
