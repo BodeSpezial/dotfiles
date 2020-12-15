@@ -195,3 +195,7 @@ let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
 let g:NERDTreeSortHiddenFirst = 1
 """ NERDTree end
+
+""" Rainbow
+let g:rainbow_active = 1
+""" Reinbow end 
