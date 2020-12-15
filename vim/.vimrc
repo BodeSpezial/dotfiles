@@ -167,13 +167,15 @@ let g:airline_symbols.dirty='⚡'
 
 """ NERDTree
 "open NERDTree autmatically
-au vimenter * NERDTree
+" au vimenter * NERDTree
+" go to 2nd available window
+" au Vimenter * 2wincmd w
+
 "close NERDTree, when it's the last window left
 au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
-au Vimenter * 2wincmd w " go to 2nd available window
 let NERDTreeMinimalUI=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
