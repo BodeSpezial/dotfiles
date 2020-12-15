@@ -1,0 +1,3 @@
+editor: vim
+aliases:
+    clone: repo clone
