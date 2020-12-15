@@ -113,6 +113,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'danishprakash/vim-docker'
 Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-surround'
 call plug#end()
 """ Plug end
 
