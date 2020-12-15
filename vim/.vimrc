@@ -20,7 +20,6 @@ let s:git_orange = 'F54D27'
 
 let g:tex_flavor='latex'
 syntax enable
-colorscheme desert
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
 
