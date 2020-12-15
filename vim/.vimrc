@@ -116,6 +116,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'APZelos/blamer.nvim'
 call plug#end()
 """ Plug end
 
