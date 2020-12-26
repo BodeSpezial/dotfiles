@@ -2,10 +2,7 @@
 disabled = true
 
 [git_branch]
-symbol = "🌱 "
-
-[username]
-show_always = true
+symbol = ""
 
 [battery]
 charging_symbol = "⚡️"
