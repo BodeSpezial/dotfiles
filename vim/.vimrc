@@ -1,24 +1,3 @@
-" colors
-let s:brown = "905532"
-let s:aqua =  "3AFFDB"
-let s:blue = "689FB6"
-let s:darkBlue = "44788E"
-let s:purple = "834F79"
-let s:lightPurple = "834F79"
-let s:red = "AE403F"
-let s:beige = "F5C06F"
-let s:yellow = "F09F17"
-let s:orange = "D4843E"
-let s:darkOrange = "F16529"
-let s:pink = "CB6F6F"
-let s:salmon = "EE6E73"
-let s:green = "8FAA54"
-let s:lightGreen = "31B53E"
-let s:white = "FFFFFF"
-let s:rspec_red = 'FE405F'
-let s:git_orange = 'F54D27'
-
-let g:tex_flavor='latex'
 syntax enable
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
@@ -73,13 +52,7 @@ else
 endif
 """ COC end
 
-""" Autocmds
 """ Moving
-"disable arrow keys to teach hjkl
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
 " use ctrl+j/k/l/w to move between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -87,6 +60,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 """ Moving end
 
+""" Autocmds
 "execute save
 au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
 au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
@@ -115,7 +89,6 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'APZelos/blamer.nvim'
 call plug#end()
 """ Plug end
 
@@ -124,13 +97,13 @@ call plug#end()
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_filetype_overrides = { 
  \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
- \}
+         \}
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_theme='bubblegum'
+let g:airline_theme='term'
 
 " unicode symbols
 let g:airline_left_sep = '»'
@@ -159,12 +132,32 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.linenr = '☰ '
+let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 """ Airline end
 
 """ NERDTree
+" colors
+let s:brown = "905532"
+let s:aqua =  "3AFFDB"
+let s:blue = "689FB6"
+let s:darkBlue = "44788E"
+let s:purple = "834F79"
+let s:lightPurple = "834F79"
+let s:red = "AE403F"
+let s:beige = "F5C06F"
+let s:yellow = "F09F17"
+let s:orange = "D4843E"
+let s:darkOrange = "F16529"
+let s:pink = "CB6F6F"
+let s:salmon = "EE6E73"
+let s:green = "8FAA54"
+let s:lightGreen = "31B53E"
+let s:white = "FFFFFF"
+let s:rspec_red = 'FE405F'
+let s:git_orange = 'F54D27'
+
 "open NERDTree autmatically
 " au vimenter * NERDTree
 " go to 2nd available window
@@ -198,3 +191,7 @@ let g:NERDTreeSortHiddenFirst = 1
 """ Rainbow
 let g:rainbow_active = 1
 """ Reinbow end 
+
+""" LaTeX
+let g:tex_flavor='latex'
+"""
