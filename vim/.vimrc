@@ -66,11 +66,11 @@ au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
 au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
 " au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
 
-augroup remember_folds
-  au!
-  au BufWinLeave * mkview
-  au BufWinEnter * silent! loadview
-augroup END
+"augroup remember_folds
+  "au!
+  "au BufWinLeave * mkview
+  "au BufWinEnter * silent! loadview
+"augroup END
 """ Aucmds end
 
 """ Plug
