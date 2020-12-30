@@ -4,6 +4,9 @@ thefuck --alias duck | source
 # bat to color manpages
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
+# use vim as editor in ttrv
+set -x TTRV_EDITOR "vim"
+
 set -g fish_user_paths "/usr/local/opt/node@12/bin" $fish_user_paths
 set -g fish_user_paths "/Users/konstatin/.local/bin" $fish_user_paths
 
