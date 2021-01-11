@@ -1,0 +1,46 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{boxes}[2021/01/06 Custom boxes with tcolorbox and empheq]
+
+\RequirePackage[theorems]{tcolorbox}
+\RequirePackage{empheq}
+
+\definecolor{orange}{HTML}{e38030}
+\definecolor{Lightorange}{HTML}{ffc77f}
+\definecolor{green}{HTML}{008c25}
+\definecolor{Lightgreen}{HTML}{a1ff99}
+\definecolor{red}{HTML}{ff0000}
+\definecolor{Lightred}{HTML}{ff7f7f}
+\definecolor{blue}{HTML}{0300d8}
+\definecolor{Lightblue}{HTML}{7fa5ff}
+
+\newtcbox{\nbox}[1][]{
+colframe=#1,
+colback=#1,
+sharp corners,
+top=1pt,
+bottom=1pt,
+left=4pt,
+right=4pt
+}
+
+\newtcolorbox{nboxfit}[1][]{
+colframe=#1,
+colback=#1,
+sharp corners,
+top=1pt,
+bottom=1pt,
+}
+
+\newtcbox{\emphformula}[1][green]{
+nobeforeafter,
+colframe=#1,
+colback=Light#1,
+nobeforeafter,
+sharp corners,
+math upper,
+top=2pt,
+bottom=2pt,
+left=4pt,
+right=4pt
+}
+
