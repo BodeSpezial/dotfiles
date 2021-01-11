@@ -1,3 +1,30 @@
+""" Plug
+call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'danishprakash/vim-docker'
+Plug 'lervag/vimtex'
+Plug 'mattn/emmet-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'ilyachur/cmake4vim'
+call plug#end()
+""" Plug end
+
 syntax enable
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
@@ -62,8 +89,8 @@ nnoremap <C-H> <C-W><C-H>
 
 """ Autocmds
 "execute save
-au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
-au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
+"au BufWritePost *.py :exec '!clear;python3' shellescape(@%, 1)
+"au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
 " au BufWritePost *.tex :exec '!lualatex' shellescape(@%, 1)
 
 "augroup remember_folds
@@ -72,26 +99,6 @@ au FileType python map <F5> :exec '!clear;python3' shellescape(@%, 1)<CR>
   "au BufWinEnter * silent! loadview
 "augroup END
 """ Aucmds end
-
-""" Plug
-call plug#begin('~/.vim/plugged')
-Plug 'lervag/vimtex'
-Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'danishprakash/vim-docker'
-Plug 'frazrepo/vim-rainbow'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/goyo.vim'
-call plug#end()
-""" Plug end
 
 """ Airline
 "enable tabs in airline
@@ -196,3 +203,8 @@ let g:rainbow_active = 1
 """ LaTeX
 let g:tex_flavor='latex'
 """
+
+""" cmake4vim
+let g:cmake_reload_after_save=1
+let g:cmake_build_dir_prefix='build-'
+""" cmake4vim end
