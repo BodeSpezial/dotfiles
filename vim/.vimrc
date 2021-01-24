@@ -1,6 +1,7 @@
 """ Plug
 call plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'tweekmonster/startuptime.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': 'CocStart' }
 
 Plug 'danishprakash/vim-docker'
 Plug 'lervag/vimtex'
