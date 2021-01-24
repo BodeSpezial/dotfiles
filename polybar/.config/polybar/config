@@ -29,3 +29,31 @@
 ; modules                                   ;
 ;-------------------------------------------;
 
+[module/battery]
+	type          = internal/battery
+	full-at       = 100
+	battery       = BAT1
+	adapter       = AC0
+	poll-interval = 5
+
+	format-charging = <label-charging>
+
+	label-charging            = "%percentage%%"
+	label-charging-background = ${xrdb:color7}
+	label-charging-foreground = ${xrdb:color0}
+	label-charging-padding    = 4
+
+	format-discharging = <label-discharging>
+
+	label-discharging            = "%percentage%%"
+	label-discharging-background = ${xrdb:color7}
+	label-discharging-foreground = ${xrdb:color0}
+	label-discharging-padding    = 4
+
+	format-full = <label-full>
+
+	label-full            = "%percentage%%"
+	label-full-background = ${xrdb:color7}
+	label-full-foreground = ${xrdb:color0}
+	label-full-padding    = 4
+
