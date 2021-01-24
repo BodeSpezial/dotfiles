@@ -1,0 +1,12 @@
+! change caps lock to escape
+clear lock
+keycode 66 = Escape NoSymbol Escape
+
+!! change modifier keys to mac layout
+! clear all keys
+clear Mod1
+clear Mod4
+
+! assign keys to new positions
+add Mod1 = Super_L Super_R
+add Mod4 = Alt_L Alt_R
