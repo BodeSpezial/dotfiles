@@ -1,3 +1,4 @@
+Xft.dpi:       115
 Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
@@ -9,8 +10,11 @@ XTerm*background:        #222D31
 XTerm*foreground:        #d8d8d8
 XTerm*pointerColor:      #1ABB9B
 XTerm*faceName:          Fixed
+XTerm*faceSize:          8
 XTerm*reverseVideo:      off
 XTerm*selectToClipboard: true
+XTerm.termName: xterm-256color
+
 *background:                      #222D31
 *foreground:                      #d8d8d8
 *fading:                          8
