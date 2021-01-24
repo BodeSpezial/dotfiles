@@ -55,3 +55,5 @@ I probably have some configuration saved here but since I'm mostly using fish I 
 
 ### i3
 
+### wtf
+
