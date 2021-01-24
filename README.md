@@ -20,7 +20,7 @@ I store most of my dotfiles for all the applications I use frequently enough to 
 * Go
 * Airline with themes (term)
 * Emmet
-### Some settings I find worth mentioning
+#### Some settings I find worth mentioning
 * I mapped `jj` to escape because of the shitty placement on standard keyboards.
 
 ### git
