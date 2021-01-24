@@ -1,0 +1,57 @@
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [36, 36, 32, 32, 90]
+    rows: [14, 14, 4, 9, 90]
+  refreshInterval: 1
+  mods:
+    ipinfo:
+      colors:
+        name: "lightblue"
+        value: "white"
+      enabled: true
+      position:
+        top: 3
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 150
+    power:
+      enabled: true
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15
+      title: "⚡️"
+    todo:
+      checkedIcon: "X"
+      colors:
+        checked: gray
+        highlight:
+          fore: "black"
+          back: "orange"
+      enabled: true
+      filename: "todo.yml"
+      position:
+        top: 0
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 3600
+    uptime:
+      args: [""]
+      cmd: "uptime"
+      enabled: true
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 30
+      type: cmdrunner
