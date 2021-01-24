@@ -51,3 +51,5 @@ As mentioned above I use LaTeX and so I created a class for my scripts.
 More or less. 
 I probably have some configuration saved here but since I'm mostly using fish I don't use or keep them updated. Maybe I'll delete 'em some time.
 
+### feh
+
