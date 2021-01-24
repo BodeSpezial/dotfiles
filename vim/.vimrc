@@ -6,7 +6,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': 'CocStart' }
 Plug 'danishprakash/vim-docker'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
