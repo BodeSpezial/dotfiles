@@ -35,3 +35,5 @@
 	required = true
 [init]
 	defaultBranch = trunk
+[pull]
+	rebase = false
