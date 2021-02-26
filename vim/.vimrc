@@ -213,3 +213,4 @@ let g:tex_flavor='latex'
 let g:cmake_reload_after_save=1
 let g:cmake_build_dir_prefix='build-'
 """ cmake4vim end
+
