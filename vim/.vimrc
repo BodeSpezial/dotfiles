@@ -31,6 +31,8 @@ call plug#end()
 syntax enable
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
+hi Comment      cterm=bold ctermfg=Gray guifg=Gray
+hi LineNr       term=underline ctermfg=Grey guifg=Grey
 
 " show errors in numbercolumn
 set signcolumn=number
