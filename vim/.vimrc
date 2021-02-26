@@ -19,7 +19,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline', {'on': 'AirlineToggle'}
 Plug 'vim-airline/vim-airline-themes', {'on': 'AirlineToggle'}
 
-Plug 'frazrepo/vim-rainbow'
+Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
