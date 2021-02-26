@@ -16,8 +16,8 @@ Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons', { 'on': 'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline', {'on': 'AirlineToggle'}
+Plug 'vim-airline/vim-airline-themes', {'on': 'AirlineToggle'}
 
 Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
