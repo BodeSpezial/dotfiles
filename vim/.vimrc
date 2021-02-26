@@ -7,6 +7,8 @@ Plug 'danishprakash/vim-docker'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'neovimhaskell/haskell-vim'
+
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
