@@ -29,6 +29,7 @@ call plug#end()
 """ Plug end
 
 syntax enable
+colo delek
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
 hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
 hi Comment      cterm=bold ctermfg=Gray guifg=Gray
