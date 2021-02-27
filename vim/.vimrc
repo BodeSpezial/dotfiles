@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'tweekmonster/startuptime.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': 'CocStart' }
 
-Plug 'danishprakash/vim-docker'
+"Plug 'danishprakash/vim-docker'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
