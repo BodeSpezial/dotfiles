@@ -1,5 +1,3 @@
-[aws]
-disabled = true
 # ~/.config/starship.toml
 
 # Use custom format
