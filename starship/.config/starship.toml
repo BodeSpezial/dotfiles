@@ -13,6 +13,7 @@ scan_timeout = 10
 
 [git_branch]
 symbol = ""
+style = "green"
 
 [git_status]
 ahead = ""
