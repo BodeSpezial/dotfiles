@@ -23,3 +23,7 @@ charging_symbol = "⚡️"
 
 [golang]
 symbol = " "
+
+[directory]
+style = "blue"
+
