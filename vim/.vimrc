@@ -28,6 +28,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'ilyachur/cmake4vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 """ Plug end
 
