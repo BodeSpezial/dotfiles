@@ -14,8 +14,12 @@ symbol = ""
 style = "green"
 
 [git_status]
-ahead = ""
-behind = ""
+format = '([$all_status$ahead_behind]($style) )'
+staged = "[($count)](green) "
+modified = "[($count)](yellow) "
+deleted = "[($count)](red) "
+stashed = "[($count)⚑](red) "
+
 
 [battery]
 charging_symbol = "⚡️"
