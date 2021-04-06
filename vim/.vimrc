@@ -19,6 +19,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline', {'on': 'AirlineToggle'}
 Plug 'vim-airline/vim-airline-themes', {'on': 'AirlineToggle'}
 
+Plug 'nightsense/cosmic_latte'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -29,12 +30,12 @@ call plug#end()
 """ Plug end
 
 syntax enable
-colo delek
-hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE
-hi Pmenu        ctermfg=15   ctermbg=8 "tabmenu color
-hi Comment      cterm=bold ctermfg=Gray guifg=Gray
-hi LineNr       term=underline ctermfg=Grey guifg=Grey
 
+set background=dark
+colorscheme cosmic_latte
+set termguicolors
+hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE guifg=7 guibg=8 gui=NONE
+hi CursorLineNr guifg=#7d9761 gui=bold
 " show errors in numbercolumn
 set signcolumn=number
 " show begun commands
