@@ -37,10 +37,13 @@ syntax enable
 set background=dark
 colorscheme cosmic_latte
 set termguicolors
+set cursorline
+set laststatus=0
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE guifg=7 guibg=8 gui=NONE
 hi CursorLineNr guifg=#7d9761 gui=bold
+
 " show errors in numbercolumn
-set signcolumn=number
+"set signcolumn=number
 " show begun commands
 set showcmd
 " use more natural splitting
