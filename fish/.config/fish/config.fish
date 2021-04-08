@@ -16,4 +16,5 @@ test -f /Users/konstatin/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /Users/k
 
 # make the preview of `cd` colored and sorted
 set -gx FZF_PREVIEW_DIR_CMD "exa --color=always -s extension"
+set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --follow --no-ignore-vcs -g '!{node_modules,.git}'"
 
