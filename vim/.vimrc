@@ -208,6 +208,10 @@ let g:cmake_build_dir_prefix='build-'
 """ cmake4vim end
 
 """ Dashboard
+fun OpenDots()
+        call fzf#vim#files('~/dotfiles', fzf#vim#with_preview(), 0)
+endfun
+
 let g:dashboard_default_executive ='fzf'
 let g:dashboard_custom_header = [
       \'     ⠀⠀⠀⠀⠀⠀⠀⡴⠞⠉⢉⣭⣿⣿⠿⣳⣤⠴⠖⠛⣛⣿⣿⡷⠖⣶⣤⡀⠀⠀⠀  ',
@@ -246,7 +250,7 @@ let g:dashboard_custom_section={
       \ 'command':function('dashboard#handler#book_marks') },
   \ 'f_open_dotfiles': {
       \ 'description': [' Open dotfiles                '],
-      \ 'command':function('dashboard#handler#book_marks') }
+      \ 'command':function('OpenDots') }
   \ }
 """ Dashboard end
 
