@@ -12,6 +12,7 @@ Plug 'neovimhaskell/haskell-vim'
 
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
+Plug 'preservim/nerdcommenter'
 
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons', { 'on': 'NERDTreeToggle' }
