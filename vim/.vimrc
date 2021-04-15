@@ -82,6 +82,17 @@ map <leader>ff :FZF<CR>
 map <leader>cc <plug>NERDCommenterToggle
 """ Leader Shortcuts end
 
+""" NERDcomment
+" Create default mappings
+let g:NERDCreateDefaultMappings = 0
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+""" NERDComment end
+
 """ COC
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
