@@ -76,6 +76,12 @@ imap jj <Esc>
 
 let mapleader = ","
 
+""" Leader Shortcuts
+map <leader>h :noh<CR>
+map <leader>ff :FZF<CR>
+map <leader>cc <plug>NERDCommenterToggle
+""" Leader Shortcuts end
+
 """ COC
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
