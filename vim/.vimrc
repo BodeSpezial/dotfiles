@@ -66,6 +66,7 @@ set encoding=UTF-8 "set encoding to utf-8 for devicons
 set expandtab "use_spaces_instead_of_tabs
 set tabstop=4 "set tabsize to 4
 set softtabstop=4 "delete 4 spaces w/ backspace
+set shiftwidth=4
 set backspace=indent,eol,start "enable backspace
 autocmd FileType make setlocal noexpandtab "use tabs for makefile
 
