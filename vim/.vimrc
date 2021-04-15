@@ -114,6 +114,11 @@ else
 endif
 """ COC end
 
+""" Prettier
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+""" Prettier end
+
 """ Moving
 " use ctrl+j/k/l/w to move between splits
 nnoremap <C-J> <C-W><C-J>
