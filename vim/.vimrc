@@ -74,6 +74,8 @@ set vb t_vb= "disable beep and flash
 
 imap jj <Esc>
 
+let mapleader = ","
+
 """ COC
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
