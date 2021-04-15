@@ -239,6 +239,18 @@ fun OpenDots()
         call fzf#vim#files('~/dotfiles', fzf#vim#with_preview(), 0)
 endfun
 
+fun OpenNotes()
+        call fzf#vim#files('~/Documents/notes_obsidian', fzf#vim#with_preview(), 0)
+endf
+
+fun NewNote()
+        call inputsave()
+        let nameOfNote = input('Filename: ')
+        call inputrestore()
+        let filePath = $HOME . '/Documents/notes_obsidian/' . nameOfNote
+        execute 'edit' . filePath
+endf
+
 let g:dashboard_default_executive ='fzf'
 let g:dashboard_custom_header = [
       \'     ⠀⠀⠀⠀⠀⠀⠀⡴⠞⠉⢉⣭⣿⣿⠿⣳⣤⠴⠖⠛⣛⣿⣿⡷⠖⣶⣤⡀⠀⠀⠀  ',
@@ -261,23 +273,35 @@ let g:dashboard_custom_header = [
 
 let g:dashboard_custom_section={
   \ 'a_new_file': {
-      \ 'description': [' New file                     '],
+      \ 'description': [' New file                 , n f'],
       \ 'command':function('dashboard#handler#new_file') },
-  \ 'b_find_file': {
-      \ 'description': [' Search for a file            '],
+  \ 'b_open_dotfiles': {
+      \ 'description': [' Open dotfiles            , d o'],
+      \ 'command':function('OpenDots') },
+  \ 'c_notes': {
+      \ 'description': [' Search for note          , s n'],
+      \ 'command':function('OpenNotes') },
+  \ 'd_new_note': {
+      \ 'description': [' Create a new note        , n n'],
+      \ 'command':function('NewNote') },
+  \ 'e_find_file': {
+      \ 'description': [' Search for a file        , f f'],
       \ 'command': function('dashboard#handler#find_file') },
-  \ 'c_recently_opened_files': {
-      \ 'description': [' Recently opened files        '],
+  \ 'f_recently_opened_files': {
+      \ 'description': [' Recently opened files          '],
       \ 'command':function('dashboard#handler#find_history') },
-  \ 'd_find_word': {
-      \ 'description': [' Find word                    '],
+  \ 'g_find_word': {
+      \ 'description': [' Find word                , a g'],
       \ 'command': function('dashboard#handler#find_word') },
-  \ 'e_jump_to_bookmarks': {
-      \ 'description': [' Jump to bookmarks            '],
+  \ 'h_jump_to_bookmarks': {
+      \ 'description': [' Jump to bookmarks              '],
       \ 'command':function('dashboard#handler#book_marks') },
-  \ 'f_open_dotfiles': {
-      \ 'description': [' Open dotfiles                '],
-      \ 'command':function('OpenDots') }
   \ }
+
+nnoremap <silent> <Leader>nf :DashboardNewFile <CR>
+nnoremap <silent> <Leader>do  :call OpenDots() <CR>
+nnoremap <silent> <Leader>sn :call OpenNotes() <CR>
+nnoremap <silent> <Leader>nn :call NewNote() <CR>
+nnoremap <silent> <Leader>ag :DashboardFindWord <CR>
 """ Dashboard end
 
