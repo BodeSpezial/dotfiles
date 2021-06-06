@@ -16,9 +16,9 @@ Plug 'rust-lang/rust.vim'
 "Plug 'honza/vim-snippets'
 Plug 'preservim/nerdcommenter'
 
-
-Plug 'vim-airline/vim-airline', {'on': 'AirlineToggle'}
-Plug 'vim-airline/vim-airline-themes', {'on': 'AirlineToggle'}
+" Status line. ~~~Off by default (less distracting)~~~
+Plug 'vim-airline/vim-airline' ", {'on': 'AirlineToggle'}
+Plug 'vim-airline/vim-airline-themes' ", {'on': 'AirlineToggle'}
 
 Plug 'nightsense/cosmic_latte'
 Plug 'glepnir/dashboard-nvim'
