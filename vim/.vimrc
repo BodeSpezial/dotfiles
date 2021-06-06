@@ -156,6 +156,8 @@ if exists('*complete_info')
 else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
+
+nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 """ COC end
 
 """ Prettier
