@@ -161,8 +161,9 @@ nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 """ COC end
 
 """ Prettier
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+" let g:prettier#autoformat = 0
+" Mardown is not formatted because errors occured and it doesn't work anyways right now
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue PrettierAsync
 """ Prettier end
 
 """ Moving
