@@ -20,6 +20,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline' ", {'on': 'AirlineToggle'}
 Plug 'vim-airline/vim-airline-themes' ", {'on': 'AirlineToggle'}
 
+" Aesthetics and other useful stuff
 Plug 'nightsense/cosmic_latte'
 Plug 'glepnir/dashboard-nvim'
 
