@@ -2,8 +2,8 @@
 
 # Use custom format
 format = """
-[>>>](bold cyan) """
 [•[•[•](green)](yellow)](blue) $directory$git_branch$git_status$package$golang$cmake
+[λ](bold purple) """
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
