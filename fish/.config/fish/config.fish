@@ -10,6 +10,10 @@ set -x TTRV_EDITOR "nvim"
 # adding variables to path
 set -g fish_user_paths "/usr/local/opt/node@12/bin" $fish_user_paths
 set -g fish_user_paths "/Users/konstatin/.local/bin" $fish_user_paths
+set -g fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
+set -g fish_user_paths "$HOME/scripts" $fish_user_paths
+set -g fish_user_paths "$HOME/go/bin" $fish_user_paths
+set -g RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/library/
 
 # ghcup-env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
