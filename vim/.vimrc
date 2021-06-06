@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier'
 
+" Syntax plugins etc.
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
