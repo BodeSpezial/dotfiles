@@ -195,7 +195,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_theme='term'
+let g:airline_theme='cosmic_latte_dark'
 
 " unicode symbols
 let g:airline_left_sep = '»'
