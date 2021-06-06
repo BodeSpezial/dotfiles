@@ -78,6 +78,7 @@ imap jj <Esc>
 
 let mapleader = ","
 
+au BufNewFile,BufRead *.ejs set filetype=html
 """ Leader Shortcuts
 map <leader>h :noh<CR>
 map <leader>ff :FZF<CR>
