@@ -16,3 +16,7 @@ nbproject
 # VIM #
 #######
 *.swp
+
+# ctags #
+#########
+tags
