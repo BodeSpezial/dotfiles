@@ -35,6 +35,10 @@ Plug 'tpope/vim-fugitive'
 " File Tree
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 
+" Tags
+Plug 'preservim/tagbar'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 call plug#end()
 """ Plug end
 
