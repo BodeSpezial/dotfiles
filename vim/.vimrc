@@ -29,6 +29,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'ilyachur/cmake4vim'
 Plug 'tpope/vim-fugitive'
+
+" File Tree
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
 call plug#end()
 """ Plug end
 
@@ -177,6 +181,13 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 """ Airline end
 
+""" CHADTree
+nnoremap <leader>nt :CHADopen<CR>
+let g:chadtree_settings = {
+            \"options.show_hidden": v:true,
+            \"theme.text_colour_set": "solarized_dark"
+\}
+""" CHADTree end
 
 """ Rainbow
 let g:rainbow_active = 1
