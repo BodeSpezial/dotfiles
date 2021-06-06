@@ -1,6 +1,7 @@
 """ Plug
 call plug#begin('~/.vim/plugged')
-"Plug 'tweekmonster/startuptime.vim'
+" Install the following for debugging purposes
+" Plug 'tweekmonster/startuptime.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier'
 
