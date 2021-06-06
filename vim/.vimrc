@@ -273,3 +273,11 @@ nnoremap <silent> <Leader>nn :call NewNote() <CR>
 nnoremap <silent> <Leader>ag :DashboardFindWord <CR>
 """ Dashboard end
 
+""" Custom functions/scripts
+fun OpenLazygit()
+    set nonumber
+    terminal lazygit
+endf
+
+nnoremap <Leader>l :call OpenLazygit() <CR>
+""" Custom functions/scripts end
