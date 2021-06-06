@@ -190,9 +190,6 @@ nnoremap <C-H> <C-W><C-H>
 """ Airline
 "enable tabs in airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_filetype_overrides = { 
- \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
-         \}
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
