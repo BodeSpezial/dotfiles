@@ -25,6 +25,7 @@ Plug 'glepnir/dashboard-nvim'
 
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
