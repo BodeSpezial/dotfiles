@@ -23,6 +23,7 @@ Plug 'vim-airline/vim-airline-themes' ", {'on': 'AirlineToggle'}
 " Aesthetics and other useful stuff
 Plug 'nightsense/cosmic_latte'
 Plug 'glepnir/dashboard-nvim'
+Plug 'rakr/vim-two-firewatch'
 
 Plug 'tpope/vim-surround'
 Plug 'vim-pandoc/vim-pandoc'
