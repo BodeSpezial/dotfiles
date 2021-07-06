@@ -51,6 +51,8 @@ set cursorline
 set laststatus=0
 hi VertSplit    ctermfg=7    ctermbg=8    cterm=NONE guifg=7 guibg=8 gui=NONE
 hi CursorLineNr guifg=#7d9761 gui=bold
+" don't have that weird beige highlighting of concealed characters
+hi Conceal      guibg=NONE
 
 " show errors in numbercolumn
 " set signcolumn=number
