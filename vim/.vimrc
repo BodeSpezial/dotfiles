@@ -25,6 +25,9 @@ Plug 'nightsense/cosmic_latte'
 Plug 'glepnir/dashboard-nvim'
 
 Plug 'tpope/vim-surround'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax' 
+
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -316,3 +319,7 @@ endf
 
 nnoremap <Leader>l :call OpenLazygit() <CR>
 """ Custom functions/scripts end
+
+""" Pandoc
+let g:pandoc#modules#disabled = ["folding"]
+""" Pandoc end
