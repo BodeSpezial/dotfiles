@@ -1,3 +1,4 @@
-editor: vim
+editor: nvim
 aliases:
     clone: repo clone
+
