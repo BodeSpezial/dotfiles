@@ -45,7 +45,6 @@ call plug#end()
 
 syntax enable
 
-set background=dark
 colorscheme two-firewatch
 set termguicolors
 set cursorline
