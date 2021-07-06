@@ -24,7 +24,6 @@ Plug 'vim-airline/vim-airline-themes' ", {'on': 'AirlineToggle'}
 Plug 'nightsense/cosmic_latte'
 Plug 'glepnir/dashboard-nvim'
 
-Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -228,10 +227,6 @@ let g:chadtree_settings = {
             \"theme.text_colour_set": "solarized_dark"
 \}
 """ CHADTree end
-
-""" Rainbow
-let g:rainbow_active = 1
-""" Reinbow end 
 
 """ LaTeX
 let g:tex_flavor='latex'
