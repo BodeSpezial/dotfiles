@@ -199,7 +199,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_theme='cosmic_latte_dark'
+let g:airline_theme='twofirewatch'
 
 " unicode symbols
 let g:airline_symbols.crypt = '🔒'
