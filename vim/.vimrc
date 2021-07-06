@@ -46,7 +46,7 @@ call plug#end()
 syntax enable
 
 set background=dark
-colorscheme cosmic_latte
+colorscheme two-firewatch
 set termguicolors
 set cursorline
 set laststatus=0
