@@ -3,7 +3,10 @@ I store most of my dotfiles for all the applications I use frequently enough to 
 
 ## List of current configurations
 
-### vim 
+### nvim 
+
+I switched to using nvim instead of vim but am currently still using the .vim configuration file.
+A few options might be missing or not work, when using the configuration with vim though because of the presets of nvim (and some plugins might only work with nvim).
 
 #### Plugins used
 * COC for completion
