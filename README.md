@@ -10,17 +10,8 @@ A few options might be missing or not work, when using the configuration with vi
 
 #### Plugins used
 * COC for completion
-    * LaTeX
-    * CSS
-    * 
-* vimtex
-* NERDTree with
-    * syntax highlighting and
-    * devicons
-* Surround
+* CHADTree
 * fzf
-* rainbow
-* Go
 * Airline with themes (term)
 * Emmet
 #### Some settings I find worth mentioning
